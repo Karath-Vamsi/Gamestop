@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,39 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.background-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
 }
+
+video{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.image-slider{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlight{
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

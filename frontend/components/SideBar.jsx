@@ -1,12 +1,15 @@
 import React from "react";
-import "../pages/Home.css"
+import { useNavigate } from "react-router-dom";
+import "./SideBar.css";
 
 const SideBar = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="main-body">
             <div className="desc-box">
                 <div className="intro">
-                    <h2 id="app-title"><i class="fa-brands fa-algolia"></i> GAMESTOP</h2>
+                    <h2 id="app-title" onClick={() => navigate('/')}><i class="fa-brands fa-algolia"></i> GAMESTOP</h2>
                     <h4 id="app-tag">Level Up Your Play</h4>
                     <h5 id="app-desc">This is not a commercial project. All of the prices are generated to imitate a real game shop.</h5>
                 </div>
@@ -16,7 +19,7 @@ const SideBar = () => {
             </div>
             <div className="sidebar">
                 {/* <h3 id="quick-nav-title">Quick Navigation</h3> */}
-                <button className="sidebar-links">
+                <button className="sidebar-links" onClick={() => navigate('spotlight')}>
                     <div className="icon-circle"><i class="fa-solid fa-highlighter"></i></div> Spotlight
                 </button>
                 <button className="sidebar-links">
