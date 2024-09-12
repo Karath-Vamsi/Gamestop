@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
-import './Home.css';
 import back_video from '../src/assets/gamestop_homescreen2.mp4';
 
 const Home = () => {
