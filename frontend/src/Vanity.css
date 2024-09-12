@@ -1,0 +1,236 @@
+/* Home Page CSS */
+.background-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+video{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+.image-slider{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spotlight{
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Navbar CSS */
+.header{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  gap: 20px;
+  background-color: transparent;
+  color: white;
+  transition: top 0.5s;
+  border: 2px solid rgb(255, 0, 255);
+  margin: 0px 0px 0px 0px;
+  padding: 0vh 3vh 0vh 6vh;
+}
+.search-bar{
+  display: inline-flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;   
+  background-color: white; 
+  border-radius: 10px;
+  /* margin: 10px; */
+}
+.search-box{
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  margin: 0px;
+  height: 40px;
+  width: 478px;
+  font-size: 16px;
+  border-color: transparent;
+  border-radius: 15px;
+  padding-left: 15px;
+  outline: none;
+  transition: width 0.4s ease;
+  box-sizing: border-box;
+}
+.search-button{
+  background-color: transparent;
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.search-button:hover{
+  background-color: black;
+  color: white;
+  outline: none;
+}
+.logo{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bolder;
+  height: 100%;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  transition: 0.4s ease-in-out;
+}
+.logo:hover{
+  color: rgb(9, 75, 68);
+  font-weight: 700;
+  scale: 1.3;
+  text-transform: lowercase;
+}
+.cart{
+  padding-left: 10px;
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+  padding-right: 1.4%;
+}
+.cart-button{
+  color:  white;
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+  outline: none;
+  border: transparent;
+}
+.cart-button:hover{
+  color: rgb(50, 50, 94);
+  scale: 1.3;
+}
+#nav-logo{
+  margin-left: 10px;
+}
+/* Sidebar CSS */
+.main-body{ 
+  flex: 1;
+  position: fixed;
+  top: 15vh;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(0, 255, 55);
+  margin: 0px 0px 0px 0px;
+  padding: 0px 40px 0px 40px;
+}
+.desc-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  width: 45%;
+  height: 90%;
+  gap: 20px;
+}
+.intro{
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  border-radius: 15px;
+  height: 60%;
+  margin-top: 15%;
+  padding: 5px;
+  backdrop-filter: blur(7px);
+}
+#app-title{
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  transition: 0.4s ease-in-out;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#app-title:hover{
+  scale: 1.2;
+  color: rgb(9, 75, 68);
+  cursor: pointer;
+}
+#app-tag{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0px;
+  color: rgb(50, 50, 94);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#app-desc{
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  color: rgb(50, 50, 94);
+}
+.hyperlinks{
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  border-radius: 15px;
+  height: 20%;
+  margin-bottom: 20%;
+  backdrop-filter: blur(7px);
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(7px);
+  width: 17%;
+  color: white;
+}
+#quick-nav-title{
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  color: rgb(50, 50, 94);
+}
+.sidebar-links{
+  display: flex;
+  justify-content: left;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(50, 50, 94);
+  text-align: center;
+  transition: 0.4s ease;
+  padding: 5px;
+}
+.sidebar-links:hover {
+  background-color: rgb(9, 75, 68);
+  transform: scale(1.2);
+  color: white;
+  font-weight: bolder;
+}
+.icon-circle{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(50, 50, 94);
+  border-radius: 50%;
+  padding: 3px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin-right: 15%;
+}
