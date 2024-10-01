@@ -8,11 +8,13 @@ const Spotlight = () => {
     <>
     <Navbar />
     <div className="spotlight">
-        <Carousel data={ slides }/>
+        {/* <Carousel data={ slides }/>
         <div className="spotlight-text">
             <h1>Spotlight</h1>
             <p className="">Check out our latest deals and offers!</p>
-        </div>
+        </div> */}
+        <div className="g1"> Hello </div>
+        <div className="g2"> Hello </div>
     </div>   
     </>
   );
