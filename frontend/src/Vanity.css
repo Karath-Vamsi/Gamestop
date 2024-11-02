@@ -1,19 +1,21 @@
 /* Home Page CSS */
 .background-video{
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1;
 }
 video{
+  /* z-index:inherit; */
   height: 100vh;
   width: 100vw;
   object-fit: cover;
 }
 .image-slider{
+  /* z-index:inherit; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +24,7 @@ video{
 }
 /* Navbar CSS */
 .header{
+  z-index: 3;
   position: fixed;
   left: 0px;
   right: 0px;
@@ -39,6 +42,7 @@ video{
   padding: 0vh 3vh 0vh 6vh;
 }
 .search-bar{
+  /* z-index:inherit; */
   display: inline-flex;
   gap: 10px;
   flex-direction: row;
@@ -49,6 +53,7 @@ video{
   /* margin: 10px; */
 }
 .search-box{
+  /* z-index:inherit; */
   background-color: white;
   color: black;
   border-radius: 6px;
@@ -64,16 +69,19 @@ video{
   box-sizing: border-box;
 }
 .search-button{
+  /* z-index:inherit; */
   background-color: transparent;
   color: black;
   transition: 0.4s ease-in-out;
 }
 .search-button:hover{
+  /* z-index:inherit; */
   background-color: black;
   color: white;
   outline: none;
 }
 .logo{
+  /* z-index:inherit; */
   display: flex;
   justify-content: left;
   align-items: center;
@@ -85,12 +93,14 @@ video{
   transition: 0.4s ease-in-out;
 }
 .logo:hover{
+  /* z-index:inherit; */
   color: rgb(9, 75, 68);
   font-weight: 700;
   scale: 1.3;
   text-transform: lowercase;
 }
 .cart{
+  /* z-index:inherit; */
   padding-left: 10px;
   color: white;
   background-color: transparent;
@@ -98,6 +108,7 @@ video{
   padding-right: 1.4%;
 }
 .cart-button{
+  /* z-index:inherit; */
   color:  white;
   background-color: transparent;
   transition: 0.4s ease-in-out;
@@ -105,14 +116,17 @@ video{
   border: transparent;
 }
 .cart-button:hover{
+  /* z-index:inherit; */
   color: rgb(50, 50, 94);
   scale: 1.3;
 }
 #nav-logo{
+  /* z-index:inherit; */
   margin-left: 10px;
 }
 /* Sidebar CSS */
 .main-body{ 
+  z-index:2;
   flex: 1;
   position: fixed;
   top: 15vh;
@@ -127,6 +141,7 @@ video{
   padding: 0px 40px 0px 40px;
 }
 .desc-box{
+  /* z-index:inherit; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,6 +152,7 @@ video{
   gap: 20px;
 }
 .intro{
+  /* z-index:inherit; */
   background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
   border-radius: 15px;
@@ -146,6 +162,7 @@ video{
   backdrop-filter: blur(7px);
 }
 #app-title{
+  /* z-index:inherit; */
   font-size: 3em;
   font-weight: bold;
   text-align: center;
@@ -154,11 +171,13 @@ video{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #app-title:hover{
+  /* z-index:inherit; */
   scale: 1.2;
   color: rgb(9, 75, 68);
   cursor: pointer;
 }
 #app-tag{
+  /* z-index:inherit; */
   font-size: 1.5em;
   text-align: center;
   margin: 0px;
@@ -166,12 +185,14 @@ video{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #app-desc{
+  /* z-index:inherit; */
   text-align: center;
   margin: 0px;
   padding: 20px;
   color: rgb(50, 50, 94);
 }
 .hyperlinks{
+  /* z-index:inherit; */
   background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
   border-radius: 15px;
@@ -180,6 +201,7 @@ video{
   backdrop-filter: blur(7px);
 }
 .sidebar{
+  /* z-index:inherit; */
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -191,6 +213,7 @@ video{
   color: white;
 }
 #quick-nav-title{
+  /* z-index:inherit; */
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
@@ -198,6 +221,7 @@ video{
   color: rgb(50, 50, 94);
 }
 .sidebar-links{
+  /* z-index:inherit; */
   display: flex;
   justify-content: left;
   border-radius: 20px;
@@ -208,12 +232,14 @@ video{
   padding: 5px;
 }
 .sidebar-links:hover {
+  /* z-index:inherit; */
   background-color: rgb(9, 75, 68);
   transform: scale(1.2);
   color: white;
   font-weight: bolder;
 }
 .icon-circle{
+  /* z-index:inherit; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +253,7 @@ video{
 }
 /* Spotlight CSS */
 .spotlight {
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -237,10 +264,29 @@ video{
   grid-template-areas: "g1 g2";
 }
 .g1{
+  /* z-index:inherit; */
   grid-area: g1;
   border: 2px solid aqua;
 }
 .g2{
+  /* z-index:inherit; */
   border: 2px solid yellow;
   grid-area: g2;
+}
+/* Cart CSS */
+.cart-popup-main {
+  z-index: 3;
+  right: 0px;
+  height: 100vh;
+  width: 25vw;
+  background-color: black;
+  padding: 10px;
+  border: 1px solid lime;
+  position: fixed;
+}
+.cart-popup-button {
+  background-color: rgb(64, 64, 64);
+  color: aliceblue;
+  font-size: 5vh;
+  border-radius: 10vh;
 }
